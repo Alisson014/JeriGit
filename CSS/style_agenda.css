@@ -35,7 +35,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     color: #f3f3f3;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 1.5vw;
     overflow: hidden;
     position: relative;
     z-index: 100;
@@ -48,17 +48,17 @@ body::-webkit-scrollbar-thumb{
 
 .topo h1{
     position: absolute;
-    top: 20px;
+    top: 1.5vw;
 }
 .topo p{
     position: absolute;
-    top: 70px;
+    top: 5.5vw;
 }
 
 /* Link Voltar */
 .link{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 1.7vw;
     color: rgb(21, 136, 212);
     text-decoration: none;
     margin-left: 5%;
@@ -81,15 +81,15 @@ body::-webkit-scrollbar-thumb{
 .calendario th{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
+    font-size: 3.3vw;
     background-color: rgb(161, 218, 255);
     color: rgb(30, 30, 30);
 }
 .calendario td{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 55px;
-    padding: 30px;
+    font-size: 4vw;
+    padding: 2.4vw;
     color: rgb(30, 30, 30);
 }
 .calendario td:hover{

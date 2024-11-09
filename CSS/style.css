@@ -137,10 +137,10 @@ body::-webkit-scrollbar-thumb{
 }
 .texto h1{
     filter: drop-shadow(3px 3px 1px black);
-    font-size: 100px;
+    font-size: 9vw;
 }
 .texto h2{
-    font-size: 30px;
+    font-size: 2.5vw;
     filter: drop-shadow(2px 2px black);
 }
 
@@ -156,7 +156,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     flex-direction: row;
     flex-flow: row wrap;
-    padding: 30px;
+    padding: 2.4vw;
     margin-top: -100px;
     gap: 20px 10px;
     position: relative;
@@ -164,23 +164,23 @@ body::-webkit-scrollbar-thumb{
 #infoT{
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: 2.8vw;
     color:rgb(10, 10, 10);
     font-weight: bold;
     text-align: center;
 }
 .info{
-    width: 400px;
+    width: 32vw;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
 }
 .info h1{
-    font-size: 30px;
+    font-size: 2.4vw;
     color:rgb(20, 20, 20);
     font-weight: bold;
 }
 .info p{
-    font-size: 18px;
+    font-size: 1.4vw;
     color: rgb(75, 75, 75);   
 }
 .info button{
@@ -188,8 +188,8 @@ body::-webkit-scrollbar-thumb{
     border: none;
     background: rgb(15, 129, 223);
     color: #f3f3f3;
-    padding: 8px 10px;
-    font-size: 18px;
+    padding: 0.5vw 0.7vw;
+    font-size: 1.40vw;
     z-index: 10;
     display: flex;
     overflow: hidden;
@@ -210,16 +210,16 @@ body::-webkit-scrollbar-thumb{
 .ImagemContent{
     overflow: hidden;
     width: 50px;
-    height: 220px;
+    height: 17.6vw;
     border-radius: 5px;
     transition: 0.8s;
 }
 .imagem img{
-    height: 220px;
+    height: 17.6vw;
 }
 
 .ImagemContent:hover{
-    width: 260px;
+    width: 20.8vw;
     transition: 0.8s;
 }
 
@@ -242,16 +242,16 @@ body::-webkit-scrollbar-thumb{
     font-family: Arial, Helvetica, sans-serif;
 }
 .Lista h1{
-    font-size: 35px;
+    font-size: 2.8vw;
 }
 .Lista dt{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 2vw;
     color:rgb(15, 129, 223);
 }
 .Lista ol{
     
-    font-size: 22px;
+    font-size: 1.60vw;
     margin-left: 20px;
 }
 .ImagemMotivo{
@@ -267,14 +267,14 @@ body::-webkit-scrollbar-thumb{
 }
 .MaisTexto h1{
     color: rgb(50, 50, 50);
-    font-size: 35px;
+    font-size: 2.8vw;
 }
 .MaisTexto h2{
-    font-size: 28px;
+    font-size: 2.2vw;
     color: rgb(55, 55, 55);
 }
 .MaisTexto p{
-    font-size: 18px;
+    font-size: 1.4vw;
 }
 
 /* Atrações */
@@ -303,13 +303,13 @@ body::-webkit-scrollbar-thumb{
     width: 70%;
     margin-left: 15%;
     background-color: #f3f3f3;
-    padding: 20px;
+    padding: 1.4vw;
     box-shadow: 1px 2px 3px black;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
     gap: 30px;
     position: absolute;
-    top: 150px;
+    top: 30%;
     z-index: 10000000;
 
     transform: scale(0);
@@ -335,11 +335,11 @@ body::-webkit-scrollbar-thumb{
     width: 50%;
 }
 .TextoPopUp h1{
-    font-size: 35px;
+    font-size: 2.8vw;
     color: rgb(50, 50, 50);
 }
 .TextoPopUp p{
-    font-size: 18px;
+    font-size: 1.4vw;
 }
 
 .PontosTuristicos{
@@ -355,8 +355,8 @@ body::-webkit-scrollbar-thumb{
 .Ponto{
     display: flex;
     flex-direction: column;
-    width: 320px;
-    height: 470px;
+    width: 24.5vw;
+    height: 36vw;
     border-radius: 20px;
     text-align: left;
     color: #e7e7e7;
@@ -373,22 +373,29 @@ body::-webkit-scrollbar-thumb{
     margin: 0;
     transition: 0.8s;
 }
+.InfoPonto h1{
+    font-size: 2.5vw;
+}
+.InfoPonto p{
+    font-size: 1.4vw;
+}
+
 #StarIcon{
-    width: 30px;
+    width: 2.4vw;
 }
 .Ponto img{
     width: 220%;
     align-self: center;   
 }
 .Ponto h1{
-    font-size: 30px;
+    font-size: 2.2vw;
 }
 .Ponto p{
     text-indent: 0;
     margin-left: 5%;
 }
 .InfoPonto button{
-    padding: 8px 10px;
+    padding: 0.6vw 0.8vw;
     background-color: rgb(15, 129, 223);
     color: #f3f3f3;
     width: 80%;
@@ -397,7 +404,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.2vw;
     transition: 0.5s;
 }
 .InfoPonto button:hover{
@@ -408,7 +415,7 @@ body::-webkit-scrollbar-thumb{
 
 .Ponto:hover{
     transform: scale(1.1) translateY(20px);
-    margin: 0px 50px 50px 50px;
+    margin: 0px 4vw 4vw 4vw;
     transition: 0.8s;
 }
 .Ponto:hover
@@ -424,17 +431,17 @@ body::-webkit-scrollbar-thumb{
     background-color: rgb(21, 136, 212);
     height: fit-content;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 3.2vw;
 }
 
 .Ofertas{
-    width: calc(100% - 300px);
+    width: calc(100% - 24vw);
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 120px 120px;
-    padding: 80px 150px 70px 150px;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 9.6vw 9.6vw;
+    padding: 6.4vw 12vw 5.6vw 12vw;
     
 }
 #Toferta1,
@@ -442,15 +449,15 @@ body::-webkit-scrollbar-thumb{
     text-align: center;
     color: #f3f3f3;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 4vw;
 }
 #Toferta2{
-    font-size: 24px;
+    font-size: 1.9vw;
 }
 .preco{
     border-radius: 10px;
-    width: 450px;
-    padding: 10px;
+    width: 36vw;
+    padding: 0.8vw;
     background-color: rgb(84, 177, 238);
     display: flex;
     justify-content: center;
@@ -463,8 +470,14 @@ body::-webkit-scrollbar-thumb{
     transition: 0.7s;
 }
 .preco h1{
-    font-size: 60px;
+    font-size: 4.5vw;
     font-weight: bolder;
+}
+.preco h2{
+    font-size: 2.2vw;
+}
+.preco p{
+    font-size: 1.2vw;
 }
 
 .preco:hover{
@@ -480,16 +493,16 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 150px;
+    height: 12vw;
     color: #f3f3f3;
 }
 footer img{
-    width: 40px;
+    width: 3.2vw;
 }
 #t{
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 1.4vw;
 }
 #Links{
     display: flex;
@@ -507,3 +520,6 @@ footer img{
         transform: translateX(0);
     }
 }
+
+/* Responsividade */
+
