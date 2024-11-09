@@ -1,0 +1,509 @@
+html{                                   /* Animação de scroll */
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+body::-webkit-scrollbar{                            /* Botão de scroll da página estilizado */
+    width: 10px;
+    z-index: 1000000;
+}
+body::-webkit-scrollbar-button{
+    display: none;
+}
+body::-webkit-scrollbar-track{
+    background-color: rgb(0, 0, 0, 0);
+    z-index: 100;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: rgba(150, 150, 150, 0.6);
+    z-index: 100;
+}
+
+/* Navegação */
+.naveg{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000000;
+}
+
+.menu{
+    display: flex;
+    flex: 65%;
+    gap: 30px;
+    padding: 10px;
+    margin-left: 20px;
+    justify-content: start;
+    align-items: center;
+}
+.menu a{
+    color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.6s;
+}
+.menu a:hover{
+    border-bottom: 2px solid #f3f3f3;
+    transition: 0.6s;
+}
+
+.logo{
+    margin-right: 20px;
+    text-align: center;
+    align-items: center;
+}
+.logo img{
+    width: 120px;
+    height: 70px;
+    margin-top: -10px;
+}
+
+.submenu{
+    flex: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.submenu button{
+    background-color: transparent;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    padding: 8px 10px; 
+    color: #f3f3f3;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.submenu button img{
+    width: 30px;
+    height: 30px;
+}
+.submenu button:hover{
+    background-color: #f3f3f3;
+    color: rgb(20, 20, 20);
+}
+
+#EnterButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition: 0.8s;
+}
+#EnterButton:hover{
+    background-color: transparent;
+    color: #f3f3f3;
+    transform: scale(1.1);
+    transition: 0.8s;
+    
+}
+
+/* 1º Card de informações */
+
+.apresentacao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.texto{
+    margin-left: -97%;
+    color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+
+    animation-name: ani;
+    animation-duration: 1s;
+}
+.texto h1{
+    filter: drop-shadow(3px 3px 1px black);
+    font-size: 100px;
+}
+.texto h2{
+    font-size: 30px;
+    filter: drop-shadow(2px 2px black);
+}
+
+.informacoes{
+    background-color: #e4e4e4a8;   
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-left: 10%;
+    width: calc(80% - 60px);
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+    padding: 30px;
+    margin-top: -100px;
+    gap: 20px 10px;
+    position: relative;
+}
+#infoT{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color:rgb(10, 10, 10);
+    font-weight: bold;
+    text-align: center;
+}
+.info{
+    width: 400px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info h1{
+    font-size: 30px;
+    color:rgb(20, 20, 20);
+    font-weight: bold;
+}
+.info p{
+    font-size: 18px;
+    color: rgb(75, 75, 75);   
+}
+.info button{
+    border-radius: 5px;
+    border: none;
+    background: rgb(15, 129, 223);
+    color: #f3f3f3;
+    padding: 8px 10px;
+    font-size: 18px;
+    z-index: 10;
+    display: flex;
+    overflow: hidden;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.info button:hover{
+    filter: drop-shadow(5px 5px rgb(0, 67, 143));
+    transition: 0.7s;
+}
+.imagem{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    border-left: 1px solid rgb(207, 207, 207);
+}
+.ImagemContent{
+    overflow: hidden;
+    width: 50px;
+    height: 220px;
+    border-radius: 5px;
+    transition: 0.8s;
+}
+.imagem img{
+    height: 220px;
+}
+
+.ImagemContent:hover{
+    width: 260px;
+    transition: 0.8s;
+}
+
+/* 2º Card de informações (header) */
+
+.Motivos{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.Lista{
+    width: 40%;
+    height: fit-content;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Lista h1{
+    font-size: 35px;
+}
+.Lista dt{
+    font-weight: bold;
+    font-size: 25px;
+    color:rgb(15, 129, 223);
+}
+.Lista ol{
+    
+    font-size: 22px;
+    margin-left: 20px;
+}
+.ImagemMotivo{
+    width: 45%;
+}
+.ImagemMotivo img{
+    width: 100%;
+}
+
+.MaisTexto{
+    width: 86%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.MaisTexto h1{
+    color: rgb(50, 50, 50);
+    font-size: 35px;
+}
+.MaisTexto h2{
+    font-size: 28px;
+    color: rgb(55, 55, 55);
+}
+.MaisTexto p{
+    font-size: 18px;
+}
+
+/* Atrações */
+
+.CaixaPopUp{
+    width: 100%;
+    margin-top: -10vh;
+    height: 110vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100000;
+    opacity: 0;
+
+    transition: 0.5s;
+}
+.AparecerCaixa{
+    z-index: 100000;
+    opacity: 1.5;
+    transition: 1s;
+}
+
+.PopUp{
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+    background-color: #f3f3f3;
+    padding: 20px;
+    box-shadow: 1px 2px 3px black;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    top: 150px;
+    z-index: 10000000;
+
+    transform: scale(0);
+    transition: 0.8s;
+}
+.Aparecer{
+    transform: scale(1.1);
+    transition: 1s;
+    z-index: 100000000000000000;
+}
+
+
+.ImagemPopUp{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+.ImagemPopUp img{
+    width: 150%;
+}
+
+.TextoPopUp{
+    width: 50%;
+}
+.TextoPopUp h1{
+    font-size: 35px;
+    color: rgb(50, 50, 50);
+}
+.TextoPopUp p{
+    font-size: 18px;
+}
+
+.PontosTuristicos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    flex-flow: row wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.Ponto{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 470px;
+    border-radius: 20px;
+    text-align: left;
+    color: #e7e7e7;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 5%;
+    overflow: hidden;
+    transition: 0.8s;
+}
+.InfoPonto{
+    background-color: #242424bb;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    margin: 0;
+    transition: 0.8s;
+}
+#StarIcon{
+    width: 30px;
+}
+.Ponto img{
+    width: 220%;
+    align-self: center;   
+}
+.Ponto h1{
+    font-size: 30px;
+}
+.Ponto p{
+    text-indent: 0;
+    margin-left: 5%;
+}
+.InfoPonto button{
+    padding: 8px 10px;
+    background-color: rgb(15, 129, 223);
+    color: #f3f3f3;
+    width: 80%;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.InfoPonto button:hover{
+    letter-spacing: 1.2px;
+    background-color: rgb(0, 102, 185);
+    transition: 0.5s;
+}
+
+.Ponto:hover{
+    transform: scale(1.1) translateY(20px);
+    margin: 0px 50px 50px 50px;
+    transition: 0.8s;
+}
+.Ponto:hover
+.InfoPonto{
+    transform: translateY(-100%);
+    transition: 0.8s;
+}
+
+
+/* Ofertas e descontos */
+
+.conteiner{
+    background-color: rgb(21, 136, 212);
+    height: fit-content;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.Ofertas{
+    width: calc(100% - 300px);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 120px 120px;
+    padding: 80px 150px 70px 150px;
+    
+}
+#Toferta1,
+#Toferta2{
+    text-align: center;
+    color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+#Toferta2{
+    font-size: 24px;
+}
+.preco{
+    border-radius: 10px;
+    width: 450px;
+    padding: 10px;
+    background-color: rgb(84, 177, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 20px;
+    border-left: 2px solid #f3f3f3;
+    border-right: 2px solid #f3f3f3;
+    transition: 0.7s;
+}
+.preco h1{
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.preco:hover{
+    transform: scale(1.1);
+
+    transition: 0.7s;
+}
+
+/* rodapé */
+
+footer{
+    background-color: rgb(0, 16, 34);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    color: #f3f3f3;
+}
+footer img{
+    width: 40px;
+}
+#t{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+#Links{
+    display: flex;
+    gap: 8px;
+}
+
+
+/* Animações */
+
+@keyframes ani{
+    from{
+        transform: translateX(-100vw);
+    }
+    to{
+        transform: translateX(0);
+    }
+}

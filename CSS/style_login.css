@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    z-index: 1000000;
+}
+body::-webkit-scrollbar-button{
+    display: none;
+}
+body::-webkit-scrollbar-track{
+    background-color: rgb(0, 0, 0, 0);
+    z-index: 100;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: rgba(150, 150, 150, 0.6);
+    z-index: 100;
+}
+
+/* Conteiner do login */
+.LoginConteiner{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    
+    align-items: center;
+    overflow: hidden;
+}
+.Imagem{
+    width: 60%;
+    height: 100%;
+    border-radius: 30px;
+    
+    overflow: hidden;
+    transform: translateX(-50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.Imagem img{
+    height: 100%;
+    position: absolute;
+}
+.CardInfo{
+    backdrop-filter: blur(10px);
+    width: 50%;
+    height: fit-content;
+    
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.15);
+    text-align: left;
+    color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+
+    animation-name: ani;
+    animation-duration: 1.5s;}
+.CardInfo p{
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.CardInfo h1{
+    font-size: 40px;
+}
+.CardInfo h2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+#StarId{
+    width: 30px;
+    position: static;
+}
+
+
+/* Formulário */
+
+.login{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 50px;
+    color: rgb(30, 30, 30);
+    font-family: Arial, Helvetica, sans-serif;
+
+    animation-name: ani2;
+    animation-duration: 1.5s;
+}
+.login form{
+    width: 100%;
+}
+.login h1{
+    font-size: 50px;
+}
+.login label{
+    font-size: 18px;
+}
+.login input{
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    
+}
+#save{
+    width: fit-content;
+    font-size: 16px;
+}
+#Logar{
+    width: 100%;
+    font-size: 20px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.login a{
+    width: 100%;
+    padding: 10px 15px;
+    margin-left: 20%;
+    align-self: center; 
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    background-color: rgb(15, 199, 223);
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* Animações */
+
+@keyframes ani{
+    from{
+        transform: translateX(-100vw);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+@keyframes ani2{
+    from{
+        opacity: 0;
+        transform: translateY(100vh);
+    }
+    to{
+        opacity: 1.5;
+        transform: translateY(0);
+    }
+}
