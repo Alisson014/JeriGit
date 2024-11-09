@@ -1,0 +1,149 @@
+/* Responsividade */
+
+@media screen and (max-width: 1100px){
+    .naveg{
+        display: none;
+    }
+    .naveg_mobile{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 750px){
+    #infoT{
+        font-size: 3.5vw;
+    }
+    .info h1{
+        font-size: 3vw;
+    }
+    .info p{
+        font-size: 2vw;
+    }
+    .info button{
+        font-size: 2.2vw;
+        padding: 1vw;
+    }
+
+    
+    
+    .ImagemContent{
+        height: 18.2vw;
+    }
+    .imagem img{
+        height: 18.2vw;
+    }
+
+
+
+    .Lista h1{
+        font-size: 3.8vw;
+        margin-bottom: 10px;
+    }
+    .Lista br{
+    display: none;    
+}
+    .Lista dt{
+        font-size: 2.8vw;
+        margin-bottom: 10px;
+    }
+    .Lista ol{
+        font-size: 2.2vw;
+    }
+
+    .MaisTexto h1{
+        font-size: 3.6vw;
+    }
+    .MaisTexto h2{
+        font-size: 3.2vw;
+    }
+    .MaisTexto p{
+        font-size: 2.2vw;
+    }
+
+    .TextoPopUp{
+        gap: 10px;
+    }
+    .TextoPopUp br{
+        display: none;
+    }
+    .TextoPopUp h1{
+        font-size: 3.6vw;
+    }
+    .TextoPopUp p{
+        font-size: 1.7vw;
+    }
+
+
+
+    .InfoPonto{
+        gap: 10px;
+    }
+    .InfoPonto br{
+        display: none;
+    }
+    .InfoPonto p{
+        font-size: 1.8vw;
+    }
+    .InfoPonto button{
+        padding: 4px;
+        margin-bottom: 10px;
+        font-size: 1.7vw;
+    }
+
+
+
+    #Toferta1,
+    #Toferta2{
+        font-size: 5vw;
+    }
+    #Toferta2{
+        font-size: 2.9vw;
+    }
+    .Ofertas{
+        grid-template-columns: 45vw;
+        grid-template-rows: 10.5vw 10.5vw 10.5vw 10.5vw;
+    }
+    .preco{
+        width: 42vw;
+        padding: 1.2vw;
+    }
+    .preco h2{
+        font-size: 2.4vw;
+    }
+    .preco p{
+        font-size: 1.6vw;
+        
+    }
+
+
+    
+    footer{
+        height: 15vw;
+    }
+    footer img{
+        width: 3.6vw;
+    }
+    #t{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 570px){
+    footer{ 
+        height: fit-content;
+        padding: 15px;
+        justify-content: space-around;
+        align-items: start;
+        gap: 8px;
+    }
+    footer img{
+        width: 4.6vw;
+    }
+    #Barra{
+        display: none;
+    }
+    #t{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
