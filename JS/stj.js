@@ -20,3 +20,15 @@ function MudarPag(){
     alert("Login realizado com sucesso!  Click para entrar");
     window.location.replace("index.html");
 }
+
+m = false
+function Menu(){
+    m = !m
+
+    if(m){
+        document.querySelector(".naveg_mobile").classList.add("m_on");
+    }
+    else{
+        document.querySelector(".naveg_mobile").classList.remove("m_on");
+    }
+}
