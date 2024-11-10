@@ -85,7 +85,7 @@ body::-webkit-scrollbar-thumb{
 
 .login{
     display: flex;
-    width: 25%;
+    width: 30%;
     flex-direction: column;
     justify-content: center;
     align-items: start;
@@ -158,4 +158,8 @@ body::-webkit-scrollbar-thumb{
         opacity: 1.5;
         transform: translateY(0);
     }
+}
+
+#idbr{
+    display: none;
 }

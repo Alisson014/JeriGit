@@ -126,9 +126,64 @@
     #t{
         font-size: 2vw;
     }
+
+
+
+    .CardInfo h1{
+        font-size: 4vw;
+    }
+    .CardInfo h2{
+        font-size: 2vw;
+    }
+    .CardInfo p{
+        font-size: 1.8;
+    }
 }
 
 @media screen and (max-width: 570px){
+    .link{
+        font-size: 4vw;
+    }
+
+    .info{
+        width: 100%;
+    }
+    .imagem{
+        width: 100%;
+        border: none;
+        justify-content: center;
+    }
+    .ImagemContent{
+        width: 30px;
+        height: 130px;
+    }
+    .ImagemContent:hover{
+        width: 150px;
+    }
+    .imagem img{
+        height: 130px;
+    }
+
+
+
+    .Motivos{
+        flex-direction: column;
+    }
+    .Lista{
+        width: 60%;
+    }
+    .ImagemMotivo{
+        width: 70%;
+    }
+
+    #IdPont{
+        font-size: 4.5vw;
+    }
+    .Ponto{
+        width: 130px;
+        height: 170px;
+    }
+
     footer{ 
         height: fit-content;
         padding: 15px;
@@ -145,5 +200,206 @@
     #t{
         flex-direction: column;
         gap: 10px;
+    }
+
+
+
+    .LoginConteiner{
+        flex-direction: column;
+        
+    }
+    #idbr{
+        display: block;
+    }
+    .Imagem{
+        width: 100%;
+        transform: translateX(0);
+        border-radius: 0;
+    }
+    .Imagem img{
+        width: 110%;
+    }
+    .login{
+        width: 60%;
+    }
+    .login h1{
+        font-size: 4vw;
+    }   
+    .CardInfo p{
+        font-size: 2vw;
+    }
+    .login label{
+        font-size: 3vw;
+    }
+    #Logar{
+        font-size: 3vw;
+    }
+    .login a{
+        font-size: 3vw;
+    }
+    #Sb{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .informacoes{
+        width: 70%;
+        margin-left: 15%;
+    }
+    #infoT{
+        font-size: 4.2vw;
+    }
+    .info h1{
+        font-size: 3.6vw;
+    }
+    .info p{
+        font-size: 2.8vw;
+    }
+    .info button{
+        font-size: 3vw;
+        padding: 1vw;
+    }
+
+
+
+    .Lista h1{
+        font-size: 4.5vw;
+        margin-bottom: 10px;
+    }
+    .Lista br{
+    display: none;    
+}
+    .Lista dt{
+        font-size: 3.5vw;
+        margin-bottom: 10px;
+    }
+    .Lista ol{
+        font-size: 3vw;
+    }
+
+    .MaisTexto h1{
+        font-size: 4.2vw;
+    }
+    .MaisTexto h2{
+        font-size: 4vw;
+    }
+    .MaisTexto p{
+        font-size: 3vw;
+    }
+
+
+    #IdPont{
+        font-size: 5vw;
+    }
+    .PontosTuristicos{
+        margin-top: 30%;
+        margin-bottom: 30%;
+        flex-direction: column;
+        transform: scale(1.5);
+    }
+    .InfoPonto{
+        gap: 5px;
+        padding-bottom: 20px;
+    }
+    .PopUp{
+        flex-direction: column;
+        gap: 0;
+    }
+    .ImagemPopUp{
+        width: 100%;
+    }
+    .TextoPopUp{
+        width: 100%;
+        gap: 15px;
+    }
+    .TextoPopUp h1{
+        font-size: 4vw;
+    }
+    .TextoPopUp p{
+        font-size: 2.4vw;
+    }
+    
+    
+    
+    .Ofertas{
+        transform: scale(1.4);
+        margin-top: 10%;
+        padding-bottom: 20%;
+    }
+
+    
+    
+    footer{ 
+        height: fit-content;
+        padding: 15px;
+        justify-content: space-around;
+        align-items: start;
+        gap: 8px;
+    }
+    footer img{
+        width: 7vw;
+    }
+    
+    #t{
+        flex-direction: column;
+        gap: 10px;
+        font-size: 2.5vw;
+    }
+
+
+
+    .topo h1{
+        font-size: 4.5vw;
+        top: 10vw
+    }
+    .topo p{
+        font-size: 2.5vw;
+        top: 15vw;
+    }
+
+
+
+    .CardInfo{
+        width: 70%;
+    }
+    .CardInfo h1{
+        font-size: 6vw;
+    }
+    .CardInfo h2{
+        font-size: 3vw;
+    }
+    .CardInfo p{
+        font-size: 3vw;
+    }
+    .login{
+        width: 80%;
+    }
+    .login h1{
+        font-size: 6vw;
+    }
+    .login label{
+        font-size: 4vw;
+    }
+    #Logar{
+        font-size: 4vw;
+    }
+    .login a{
+        font-size: 5vw;
+    }
+    #Sb{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .naveg_mobile{
+        width: 150px;
+    }
+    .logoM img{
+        width: 100px;
+    }
+    #ICM{
+        transform: scale(0.7);
     }
 }

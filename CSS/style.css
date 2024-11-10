@@ -206,12 +206,12 @@ body::-webkit-scrollbar-thumb{
     animation-duration: 1s;
 }
 .texto h1{
-    filter: drop-shadow(3px 3px 1px black);
+    filter: drop-shadow(0.2vw 0.2vw 0.08vw black);
     font-size: 9vw;
 }
 .texto h2{
     font-size: 2.5vw;
-    filter: drop-shadow(2px 2px black);
+    filter: drop-shadow(0.15vw 0.15vw black);
 }
 
 .informacoes{
@@ -410,6 +410,10 @@ body::-webkit-scrollbar-thumb{
 }
 .TextoPopUp p{
     font-size: 1.4vw;
+}
+
+#IdPont{
+    font-size: 4vw;
 }
 
 .PontosTuristicos{
